@@ -3,19 +3,18 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "DrawableInterface.h"
 #include "TexturesStorage.h"
 
-class GUI:public DrawableInterface {
+class GUI {
     public:
-        GUI();
-        void draw(sf::RenderWindow&);
-        void setHealth(const int&);
+        static void init();
+        static void draw(sf::RenderWindow&);
+        static void setHealth(const int&);
     private:
-        sf::Sprite mainSprite;
-        sf::Texture *mainTexture;
-        sf::Texture* healthTextures[5];
-        sf::Sprite healthSprites[5];
+        static sf::Sprite mainSprite;
+        static sf::Texture mainTexture;
+        static sf::Texture healthTextures[5];
+        static sf::Sprite healthSprites[5];
 };
 
 #endif

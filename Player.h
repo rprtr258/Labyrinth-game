@@ -5,23 +5,21 @@
 
 #include "TexturesStorage.h"
 #include "PlayerStats.h"
-#include "DrawableInterface.h"
 
-class Player:public DrawableInterface {
+class Player {
     public:
-        Player();
-        Player(float, float);
-        void draw(sf::RenderWindow&);
-        void move(float x, float y);
-        void move(int dx, int dy);
-        std::pair<int, int> getPos();
-        PlayerStats& getStats();
+        static void init();
+        static void draw(sf::RenderWindow&);
+        static void move(float x, float y);
+        static void move(int dx, int dy);
+        static std::pair<int, int> getPos();
+        static PlayerStats& getStats();
     private:
-        sf::Texture texture;
-        sf::Sprite sprite;
-        int x, y;
-        PlayerStats stats;
-        enum MoveDir{UP=1, RIGHT=2, DOWN=3, LEFT=4} dir;
+        static sf::Texture texture;
+        static sf::Sprite sprite;
+        static int x, y;
+        static PlayerStats stats;
+        static enum MoveDir{UP=1, RIGHT=2, DOWN=3, LEFT=4} dir;
 };
 
 #endif

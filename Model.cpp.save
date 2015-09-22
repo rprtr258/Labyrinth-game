@@ -1,9 +1,5 @@
 #include "Model.h"
 
-Turn Model::moves[4];
-float Model::dirx, Model::diry, Model::speed;
-bool Model::playerMoves;
-
 void Model::init() {
     TrueChest::init();
     Inventory::init();
@@ -20,8 +16,8 @@ void Model::init() {
         chestY = rand()%HEIGHT;
     }
     TrueChest::setCords(std::make_pair(chestX, chestY));
-    Player::init();
-    GUI::setHealth(Player::getStats().getHealth());
+    Player::init(Labyrinth::array[0][0]->getSprite().getPosition().x, Labyrinth::array[0][0]->getSprite().getPosition().y);
+    gui->setHealth(player->getStats().getHealth());
     moves[0].set(sf::Keyboard::Up,    Cell::UP,    0.0f, -speed);
     moves[1].set(sf::Keyboard::Right, Cell::RIGHT, speed,  0.0f);
     moves[2].set(sf::Keyboard::Down,  Cell::DOWN,  0.0f,  speed);
@@ -31,9 +27,9 @@ void Model::init() {
 void Model::moveHero(const sf::Keyboard::Key& key) {
     for(int i=0;i<4;i++) {
         if(key==moves[i].getKey() &&
-           !Labyrinth::array[Player::getPos().first][Player::getPos().second]->getWall(moves[i].getWall()) &&
+           !Labyrinth::array[player->getPos().first][player->getPos().second]->getWall(moves[i].getWall()) &&
            !playerMoves) {
-            Player::move(int(moves[i].getDirX()*1/speed), int(moves[i].getDirY()*1/speed));
+            player->move(int(moves[i].getDirX()*1/speed), int(moves[i].getDirY()*1/speed));
             setAnimDir(moves[i].getDirX(), moves[i].getDirY());
             setPlayerMoves(true);
             setView();
@@ -42,10 +38,22 @@ void Model::moveHero(const sf::Keyboard::Key& key) {
 }
 
 void Model::turnInvShow() {
-    if(Inventory::visible())
-        Inventory::hide();
-    else
-        Inventory::show();
+    static bool invShowed = false;
+    if(invShowed) {
+        inventory->hide();
+        invShowed = false;
+    } else {
+        inventory->show();
+        invShowed = true;
+    }
+}
+
+void Model::setDrawer() {
+    Drawer::setGUI(gui);
+    Drawer::pushDrawable(lab);
+    Drawer::pushDrawable(trueChest);
+    Drawer::pushDrawable(player);
+    Drawer::pushDrawable(inventory);
 }
 
 const bool& Model::getPlayerMoves() {
@@ -57,7 +65,7 @@ void Model::setPlayerMoves(const bool& state) {
 }
 
 bool Model::isVisibleCell(const int &x, const int &y) {
-    int px = Player::getPos().first, py = Player::getPos().second;
+    int px = player->getPos().first, py = player->getPos().second;
     if(x==px && y==py) return true;
     if(px<WIDTH-1 && x==px+1 && y==py && !Labyrinth::array[px][py]->getWall(Cell::RIGHT)) {
         return true;
@@ -79,7 +87,7 @@ void Model::animationStep() {
     if(!playerMoves) return;
     playerSteps++;
     Drawer::getView().move(dirx, diry);
-    Player::move(dirx, diry);
+    player->move(dirx, diry);
     if(playerSteps==ceilf(128.0f/speed)) {
         playerMoves = false;
         playerSteps = 0;
@@ -89,14 +97,14 @@ void Model::animationStep() {
 void Model::setView() {
     for(int i=0;i<WIDTH;i++) {
         for(int j=0;j<HEIGHT;j++) {
-            Labyrinth::setDrawableCell(i, j, isVisibleCell(i, j));
+            lab->setDrawableCell(i, j, isVisibleCell(i, j));
         }
     }
-    const std::pair<int, int> &chestCords = TrueChest::getCords();
-    TrueChest::setVisible(isVisibleCell(chestCords.first, chestCords.second));
+    const std::pair<int, int> &chestCords = trueChest->getCords();
+    trueChest->setVisible(isVisibleCell(chestCords.first, chestCords.second));
 }
 
-void Model::setAnimDir(const float& dx, const float& dy) {
-    dirx = dx;
-    diry = dy;
+void Model::setAnimDir(const float& dirx, const float& diry) {
+    this->dirx = dirx;
+    this->diry = diry;
 }

@@ -7,23 +7,23 @@
 #include "Util.h"
 #include "DSU.h"
 #include "Constants.h"
-#include "DrawableInterface.h"
 
 bool testChance(int chance);
 
-class Labyrinth:public DrawableInterface {
+class Labyrinth {
     public:
-        Labyrinth();
-        ~Labyrinth();
+        static void init();
 
-        void generate();
+        static void generate();
 
-        void setDrawableCell(const int&, const int&, const bool&);
+        static void setDrawableCell(const int&, const int&, const bool&);
 
-        void draw(sf::RenderWindow &window);
+        static void draw(sf::RenderWindow &window);
 
-        Cell *array[WIDTH][HEIGHT];
-        bool drawing[WIDTH][HEIGHT];
+        static void clear();
+
+        static Cell *array[WIDTH][HEIGHT];
+        static bool drawing[WIDTH][HEIGHT];
 };
 
 #endif

@@ -1,17 +1,10 @@
 #include "Drawer.h"
-
-sf::RenderWindow Drawer::window;
-sf::View Drawer::view, Drawer::guiView;;
-
+sf::RectangleShape r;
 void Drawer::init() {
-    Drawer::window.create(sf::VideoMode(640, 640+GUI_HEIGHT), "Labyrinth");
-
+    window.create(sf::VideoMode(640, 640+GUI_HEIGHT), "Labyrinth");
     view.reset(sf::FloatRect(0, 0, 640, 640));
     view.setCenter(64, 64);
     view.setViewport(sf::FloatRect(0.0f, GUI_HEIGHT/(0.0f+640+GUI_HEIGHT), 1.0f, 1.0f-GUI_HEIGHT/(0.0f+640+GUI_HEIGHT)));
-
-    guiView.reset(sf::FloatRect(0, 0, 640, 640+GUI_HEIGHT));
-    guiView.setViewport(sf::FloatRect(0.0f, 0.0f, 1.0f, 1.0f));
 }
 
 sf::View& Drawer::getView() {
@@ -23,12 +16,14 @@ sf::RenderWindow& Drawer::getWindow() {
 }
 
 void Drawer::draw() {
+    sf::View guiView;
+    guiView.reset(sf::FloatRect(0, 0, 640, 640+GUI_HEIGHT));
+    guiView.setViewport(sf::FloatRect(0.0f, 0.0f, 1.0f, 1.0f));
     window.setView(guiView);
     GUI::draw(window);
-    Inventory::draw(window);
-///////////////////////////////////////
+    things.at(3)->draw(window);
     window.setView(view);
-    Labyrinth::draw(window);
-    Player::draw(window);
-    TrueChest::draw(window);
+    for(std::vector<DrawableInterface*>::iterator it = things.begin();it!=things.end()-1;it++) {
+        (*it)->draw(window);
+    }
 }

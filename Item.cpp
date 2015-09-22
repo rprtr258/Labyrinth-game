@@ -1,4 +1,4 @@
-#include "Item.h"
+﻿#include "Item.h"
 
 Item::Item() {
     texture = TexturesStorage::getEmptyCellTexture();
@@ -15,7 +15,6 @@ Item::Item(const int &posX, const int &posY) {
 }
 
 Item::~Item() {
-    ;
 }
 
 void Item::setPos(const int &posX, const int &posY) {

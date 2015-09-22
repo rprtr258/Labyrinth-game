@@ -1,17 +1,15 @@
 #include "Player.h"
 
-Player::Player() {
+sf::Texture Player::texture;
+sf::Sprite Player::sprite;
+int Player::x, Player::y;
+PlayerStats Player::stats;
+Player::MoveDir Player::dir;
+
+void Player::init() {
     texture = TexturesStorage::getPlayerTexture();
     sprite.setTexture(texture);
     sprite.setPosition(0, 0);
-    x = 0;
-    y = 0;
-}
-
-Player::Player(float x, float y) {
-    texture = TexturesStorage::getPlayerTexture();
-    sprite.setTexture(texture);
-    sprite.setPosition(x, y);
     x = 0;
     y = 0;
 }

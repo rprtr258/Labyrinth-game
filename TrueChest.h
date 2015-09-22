@@ -5,23 +5,22 @@
 
 #include "TexturesStorage.h"
 #include "Constants.h"
-#include "DrawableInterface.h"
 
-class TrueChest:public DrawableInterface {
+class TrueChest {
     public:
-        TrueChest();
+        static void init();
 
-        const std::pair<int, int>& getCords();
-        void setCords(std::pair<int, int>);
+        static const std::pair<int, int>& getCords();
+        static void setCords(std::pair<int, int>);
 
-        void setVisible(const bool&);
+        static void setVisible(const bool&);
 
-        void draw(sf::RenderWindow &window);
+        static void draw(sf::RenderWindow &window);
     private:
-        sf::Texture texture;
-        sf::Sprite sprite;
-        bool visible;
-        std::pair<int, int> cords;
+        static sf::Texture texture;
+        static sf::Sprite sprite;
+        static bool visible;
+        static std::pair<int, int> cords;
 };
 
 #endif

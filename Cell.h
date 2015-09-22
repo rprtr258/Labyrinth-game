@@ -4,10 +4,9 @@
 #include <SFML/Graphics.hpp>
 
 #include "TexturesStorage.h"
-#include "DrawableInterface.h"
 #include "Constants.h"
 
-class Cell:public DrawableInterface {
+class Cell {
     public:
         static const int LEFT = 1, DOWN = 2, RIGHT = 4, UP = 8;
         static const int RU_CORNER = 16, RD_CORNER = 32, LD_CORNER = 64, LU_CORNER = 128;

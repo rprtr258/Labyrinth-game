@@ -16,6 +16,11 @@ class Model {
         static void init();
         static void moveHero(const sf::Keyboard::Key&);
 
+        static Labyrinth* getLabyrinth();
+        static Player* getPlayer();
+
+        static void setDrawer();
+
         static void setPlayerMoves(const bool&);
         static const bool& getPlayerMoves();
 
@@ -27,6 +32,10 @@ class Model {
 
         static bool isVisibleCell(const int&, const int&);
     private:
+        static Inventory *inventory;
+        static Labyrinth *lab;
+        static Player *player;
+        static TrueChest *trueChest;
         static Turn moves[4];
         static float dirx, diry, speed;
         static bool playerMoves;

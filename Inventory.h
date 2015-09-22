@@ -2,19 +2,19 @@
 #define INVENTORY_H
 
 #include "Item.h"
-#include "DrawableInterface.h"
 
-class Inventory:public DrawableInterface {
+class Inventory {
     public:
-        Inventory();
-        ~Inventory();
-        void draw(sf::RenderWindow&);
+        static void init();
+        static void draw(sf::RenderWindow&);
 
-        void show();
-        void hide();
+        static void show();
+        static void hide();
+        static const bool& visible();
+        static void clear();
     private:
-        Item* inv[4][3];
-        bool showed;
+        static Item* inv[4][3];
+        static bool showed;
 };
 
 #endif

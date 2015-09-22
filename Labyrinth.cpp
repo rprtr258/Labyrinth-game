@@ -1,9 +1,11 @@
 #include "Labyrinth.h"
 
+Cell *Labyrinth::array[WIDTH][HEIGHT];
+bool Labyrinth::drawing[WIDTH][HEIGHT];
 const int Cell::LEFT, Cell::DOWN, Cell::RIGHT, Cell::UP;
 const int Cell::RU_CORNER, Cell::RD_CORNER, Cell::LD_CORNER, Cell::LU_CORNER;
 
-Labyrinth::Labyrinth() {
+void Labyrinth::init() {
     for(int i=0;i<HEIGHT;i++) {
         for(int j=0;j<WIDTH;j++) {
             array[j][i] = new Cell();
@@ -30,7 +32,7 @@ Labyrinth::Labyrinth() {
     }
 }
 
-Labyrinth::~Labyrinth() {
+void Labyrinth::clear() {
     for(int i=0;i<HEIGHT;i++) {
         for(int j=0;j<WIDTH;j++) {
             delete array[j][i];

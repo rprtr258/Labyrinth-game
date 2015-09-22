@@ -1,6 +1,11 @@
 #include "TrueChest.h"
 
-TrueChest::TrueChest() {
+sf::Texture TrueChest::texture;
+sf::Sprite TrueChest::sprite;
+bool TrueChest::visible;
+std::pair<int, int> TrueChest::cords;
+
+void TrueChest::init() {
     visible = false;
     texture = TexturesStorage::getChestTexture();
     sprite.setTexture(texture);
@@ -11,7 +16,7 @@ const std::pair<int, int>& TrueChest::getCords() {
 }
 
 void TrueChest::setCords(std::pair<int, int> cords) {
-    this->cords = cords;
+    TrueChest::cords = cords;
     sprite.setPosition(cords.first*CELL_SIZE, cords.second*CELL_SIZE);
 }
 

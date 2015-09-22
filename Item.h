@@ -19,7 +19,6 @@ class Item {
         sf::Texture texture;
         int posX, posY;
         Type type;
-    private:
 };
 
 #endif

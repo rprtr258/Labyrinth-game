@@ -7,12 +7,7 @@
 
 class Controller {
     public:
-        Controller();
-        ~Controller();
-        void processKey(const sf::Keyboard::Key&);
-        void setModel(Model*);
-    private:
-        Model *model;
+        static void processKey(const sf::Keyboard::Key&);
 };
 
 #endif
