@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Labyrinth" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Labyrinth" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="G:/workspaceC/Libraries/SFML-2.2/include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+					<Add directory="G:/workspaceC/Libraries/SFML-2.2/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Labyrinth" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="G:/workspaceC/Libraries/SFML-2.2/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add directory="G:/workspaceC/Libraries/SFML-2.2/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wextra" />
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="G:/workspaceC/Libraries/SFML-2.2/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="G:/workspaceC/Libraries/SFML-2.2/lib" />
+		</Linker>
+		<Unit filename="Cell.cpp" />
+		<Unit filename="Cell.h" />
+		<Unit filename="Constants.h" />
+		<Unit filename="Controller.cpp" />
+		<Unit filename="Controller.h" />
+		<Unit filename="DSU.cpp" />
+		<Unit filename="DSU.h" />
+		<Unit filename="DrawableInterface.cpp" />
+		<Unit filename="DrawableInterface.h" />
+		<Unit filename="Drawer.cpp" />
+		<Unit filename="Drawer.h" />
+		<Unit filename="GUI.cpp" />
+		<Unit filename="GUI.h" />
+		<Unit filename="Inventory.cpp" />
+		<Unit filename="Inventory.h" />
+		<Unit filename="Item.cpp" />
+		<Unit filename="Item.h" />
+		<Unit filename="Labyrinth.cpp" />
+		<Unit filename="Labyrinth.h" />
+		<Unit filename="Model.cpp" />
+		<Unit filename="Model.h" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
+		<Unit filename="PlayerStats.cpp" />
+		<Unit filename="PlayerStats.h" />
+		<Unit filename="TexturesStorage.cpp" />
+		<Unit filename="TexturesStorage.h" />
+		<Unit filename="TrueChest.cpp" />
+		<Unit filename="TrueChest.h" />
+		<Unit filename="Turn.cpp" />
+		<Unit filename="Turn.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

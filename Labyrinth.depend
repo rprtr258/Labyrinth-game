@@ -1,0 +1,488 @@
+# depslib dependency file v1.0
+1442905972 source:g:\workspacec\labyrinth\main.cpp
+	<SFML/Graphics.hpp>
+	"Drawer.h"
+	"Controller.h"
+	"Model.h"
+	"TexturesStorage.h"
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/View.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\window.hpp
+	<SFML/System.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Touch.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowStyle.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+
+1418167556 g:\workspacec\libraries\sfml-2.2\include\sfml\config.hpp
+	"TargetConditionals.h"
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\clock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\export.hpp
+	<SFML/Config.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\time.hpp
+	<SFML/System/Export.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\inputstream.hpp
+	<SFML/Config.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\noncopyable.hpp
+	<SFML/System/Export.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\sleep.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\string.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\utf.hpp
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\utf.inl
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\string.inl
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\thread.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\thread.inl
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\threadlocal.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\threadlocalptr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\threadlocalptr.inl
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\vector2.inl
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\system\vector3.inl
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\window\context.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\window\export.hpp
+	<SFML/Config.hpp>
+
+1417738160 g:\workspacec\libraries\sfml-2.2\include\sfml\window\glresource.hpp
+	<SFML/Window/Export.hpp>
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\window\contextsettings.hpp
+
+1417738159 g:\workspacec\libraries\sfml-2.2\include\sfml\window\event.hpp
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+
+1417738160 g:\workspacec\libraries\sfml-2.2\include\sfml\window\joystick.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+
+1417738160 g:\workspacec\libraries\sfml-2.2\include\sfml\window\keyboard.hpp
+	<SFML/Window/Export.hpp>
+
+1417738160 g:\workspacec\libraries\sfml-2.2\include\sfml\window\mouse.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+
+1417738160 g:\workspacec\libraries\sfml-2.2\include\sfml\window\sensor.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/System/Time.hpp>
+
+1417738160 g:\workspacec\libraries\sfml-2.2\include\sfml\window\touch.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+
+1417738160 g:\workspacec\libraries\sfml-2.2\include\sfml\window\videomode.hpp
+	<SFML/Window/Export.hpp>
+	<vector>
+
+1417738160 g:\workspacec\libraries\sfml-2.2\include\sfml\window\window.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/String.hpp>
+
+1417738160 g:\workspacec\libraries\sfml-2.2\include\sfml\window\windowhandle.hpp
+	<SFML/Config.hpp>
+
+1417738160 g:\workspacec\libraries\sfml-2.2\include\sfml\window\windowstyle.hpp
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\blendmode.hpp
+	<SFML/Graphics/Export.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\export.hpp
+	<SFML/Config.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\color.hpp
+	<SFML/Graphics/Export.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\font.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/String.hpp>
+	<map>
+	<string>
+	<vector>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\glyph.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\rect.hpp
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\rect.inl
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\texture.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\image.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\renderstates.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\transform.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\rendertexture.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\rendertarget.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\view.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\primitivetype.hpp
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\vertex.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\renderwindow.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\shader.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\shape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\drawable.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\transformable.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\vertexarray.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\circleshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\rectangleshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\convexshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\sprite.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1417738158 g:\workspacec\libraries\sfml-2.2\include\sfml\graphics\text.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
+
+1442586374 source:g:\workspacec\labyrinth\cell.cpp
+	"Cell.h"
+
+1442562387 g:\workspacec\labyrinth\cell.h
+	<SFML/Graphics.hpp>
+	"TexturesStorage.h"
+	"DrawableInterface.h"
+	"Constants.h"
+
+1442584789 g:\workspacec\labyrinth\labyrinth.h
+	<SFML/Graphics.hpp>
+	"Cell.h"
+	"Util.h"
+	"DSU.h"
+	"Constants.h"
+	"DrawableInterface.h"
+
+1442618617 source:g:\workspacec\labyrinth\labyrinth.cpp
+	"Labyrinth.h"
+
+1442102960 source:g:\workspacec\labyrinth\util.cpp
+	"Util.h"
+
+1442104842 g:\workspacec\labyrinth\util.h
+
+1442397672 source:g:\workspacec\labyrinth\dsu.cpp
+	"DSU.h"
+
+1442397665 g:\workspacec\labyrinth\dsu.h
+
+1442907098 source:g:\workspacec\labyrinth\drawer.cpp
+	"Drawer.h"
+
+1442840011 g:\workspacec\labyrinth\drawer.h
+	<vector>
+	<SFML/Graphics.hpp>
+	"Constants.h"
+	"DrawableInterface.h"
+
+1442905814 g:\workspacec\labyrinth\texturesstorage.h
+	<string>
+	<SFML/Graphics.hpp>
+
+1442905813 source:g:\workspacec\labyrinth\texturesstorage.cpp
+	"TexturesStorage.h"
+
+1442842044 g:\workspacec\labyrinth\player.h
+	<SFML/Graphics.hpp>
+	"TexturesStorage.h"
+	"PlayerStats.h"
+	"DrawableInterface.h"
+
+1442842044 source:g:\workspacec\labyrinth\player.cpp
+	"Player.h"
+
+1442618962 g:\workspacec\labyrinth\constants.h
+
+1442397710 g:\workspacec\labyrinth\turn.h
+	<SFML/Graphics.hpp>
+
+1442397192 source:g:\workspacec\labyrinth\turn.cpp
+	"Turn.h"
+
+1442906620 source:g:\workspacec\labyrinth\controller.cpp
+	"Controller.h"
+
+1442419415 g:\workspacec\labyrinth\controller.h
+	<SFML/Graphics.hpp>
+	"Model.h"
+
+1442841861 g:\workspacec\labyrinth\playerstats.h
+	"Turn.h"
+	"Labyrinth.h"
+
+1442906608 g:\workspacec\labyrinth\model.h
+	<cmath>
+	"Labyrinth.h"
+	"Player.h"
+	"TrueChest.h"
+	"Turn.h"
+	"Drawer.h"
+	"GUI.h"
+	"Inventory.h"
+
+1442906608 source:g:\workspacec\labyrinth\model.cpp
+	"Model.h"
+
+1442841904 source:g:\workspacec\labyrinth\playerstats.cpp
+	"PlayerStats.h"
+
+1442533047 g:\workspacec\labyrinth\truechest.h
+	<SFML/Graphics.hpp>
+	"TexturesStorage.h"
+	"Constants.h"
+	"DrawableInterface.h"
+
+1442810538 source:g:\workspacec\labyrinth\truechest.cpp
+	"TrueChest.h"
+
+1442529982 g:\workspacec\labyrinth\drawableinterface.h
+	<SFML/Graphics.hpp>
+
+1442529975 source:g:\workspacec\labyrinth\drawableinterface.cpp
+	"DrawableInterface.h"
+
+1442848866 source:g:\workspacec\labyrinth\gui.cpp
+	"GUI.h"
+
+1442842672 g:\workspacec\labyrinth\gui.h
+	<SFML/Graphics.hpp>
+	"DrawableInterface.h"
+	"TexturesStorage.h"
+
+1442907229 source:g:\workspacec\labyrinth\inventory.cpp
+	"Inventory.h"
+
+1442907142 g:\workspacec\labyrinth\inventory.h
+	"Item.h"
+	"DrawableInterface.h"
+
+1442906177 g:\workspacec\labyrinth\item.h
+	<SFML/Graphics.hpp>
+	"TexturesStorage.h"
+
+1442907154 source:g:\workspacec\labyrinth\item.cpp
+	"Item.h"
+
