@@ -11,6 +11,7 @@
 #include "Player.h"
 #include "TrueChest.h"
 #include "Inventory.h"
+#include "Messenger.h"
 
 class Drawer {
     public:

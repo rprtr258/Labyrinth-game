@@ -504,15 +504,16 @@
 
 1442618962 g:\workspacec\labyrinth\labyrinth-game\constants.h
 
-1442933876 source:g:\workspacec\labyrinth\labyrinth-game\controller.cpp
+1443022040 source:g:\workspacec\labyrinth\labyrinth-game\controller.cpp
 	"Controller.h"
 
 1442933876 g:\workspacec\labyrinth\labyrinth-game\controller.h
 	<SFML/Graphics.hpp>
 	"Model.h"
 
-1442935204 g:\workspacec\labyrinth\labyrinth-game\model.h
+1443020690 g:\workspacec\labyrinth\labyrinth-game\model.h
 	<cmath>
+	<string>
 	"Labyrinth.h"
 	"Player.h"
 	"TrueChest.h"
@@ -549,7 +550,7 @@
 	"TexturesStorage.h"
 	"Constants.h"
 
-1442934619 g:\workspacec\labyrinth\labyrinth-game\drawer.h
+1443019000 g:\workspacec\labyrinth\labyrinth-game\drawer.h
 	<vector>
 	<SFML/Graphics.hpp>
 	"Constants.h"
@@ -558,6 +559,7 @@
 	"Player.h"
 	"TrueChest.h"
 	"Inventory.h"
+	"Messenger.h"
 
 1442935554 g:\workspacec\labyrinth\labyrinth-game\gui.h
 	<SFML/Graphics.hpp>
@@ -573,7 +575,7 @@
 1442529975 source:g:\workspacec\labyrinth\labyrinth-game\drawableinterface.cpp
 	"DrawableInterface.h"
 
-1442992471 source:g:\workspacec\labyrinth\labyrinth-game\drawer.cpp
+1443019357 source:g:\workspacec\labyrinth\labyrinth-game\drawer.cpp
 	"Drawer.h"
 
 1442397672 source:g:\workspacec\labyrinth\labyrinth-game\dsu.cpp
@@ -582,15 +584,15 @@
 1442994277 source:g:\workspacec\labyrinth\labyrinth-game\gui.cpp
 	"GUI.h"
 
-1442995394 source:g:\workspacec\labyrinth\labyrinth-game\inventory.cpp
+1442995998 source:g:\workspacec\labyrinth\labyrinth-game\inventory.cpp
 	"Inventory.h"
 
-1442995549 source:g:\workspacec\labyrinth\labyrinth-game\item.cpp
+1442995998 source:g:\workspacec\labyrinth\labyrinth-game\item.cpp
 
-1442993679 source:g:\workspacec\labyrinth\labyrinth-game\labyrinth.cpp
+1443021100 source:g:\workspacec\labyrinth\labyrinth-game\labyrinth.cpp
 	"Labyrinth.h"
 
-1442994952 source:g:\workspacec\labyrinth\labyrinth-game\main.cpp
+1443019616 source:g:\workspacec\labyrinth\labyrinth-game\main.cpp
 	<SFML/Graphics.hpp>
 	"Drawer.h"
 	"Controller.h"
@@ -612,6 +614,18 @@
 1442397192 source:g:\workspacec\labyrinth\labyrinth-game\turn.cpp
 	"Turn.h"
 
-1442935925 source:g:\workspacec\labyrinth\labyrinth-game\model.cpp
+1443021749 source:g:\workspacec\labyrinth\labyrinth-game\model.cpp
 	"Model.h"
+
+1443018791 g:\workspacec\labyrinth\labyrinth-game\messager.h
+	<SFML/Graphics.hpp>
+
+1443018791 g:\workspacec\labyrinth\labyrinth-game\messanger.h
+	<SFML/Graphics.hpp>
+
+1443019863 g:\workspacec\labyrinth\labyrinth-game\messenger.h
+	<SFML/Graphics.hpp>
+
+1443020306 source:g:\workspacec\labyrinth\labyrinth-game\messenger.cpp
+	"Messenger.h"
 

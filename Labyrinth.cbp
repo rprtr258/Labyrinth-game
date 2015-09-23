@@ -69,6 +69,8 @@
 		<Unit filename="Item.h" />
 		<Unit filename="Labyrinth.cpp" />
 		<Unit filename="Labyrinth.h" />
+		<Unit filename="Messenger.cpp" />
+		<Unit filename="Messenger.h" />
 		<Unit filename="Model.cpp" />
 		<Unit filename="Model.h" />
 		<Unit filename="Player.cpp" />

@@ -31,4 +31,5 @@ void Drawer::draw() {
     window.setView(guiView);
         GUI::draw(window);
         Inventory::draw(window);
+        Messenger::draw(window);
 }

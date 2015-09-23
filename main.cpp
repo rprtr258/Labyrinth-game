@@ -27,8 +27,8 @@ int main() {
     TexturesStorage::loadTexture("Empty_Cell", "img\\empty_cell.png");
     TexturesStorage::loadTexture("Inventory", "img\\inventory.png");
 
-    Drawer::init();
     Model::init();
+    Drawer::init();
 
     while (Drawer::getWindow().isOpen()) {
         sf::Event event;

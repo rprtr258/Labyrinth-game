@@ -8,6 +8,7 @@ void Model::init() {
     TrueChest::init();
     Inventory::init();
     Labyrinth::init();
+    Messenger::init();
     Labyrinth::generate();
     GUI::init();
     int chestX = WIDTH-10, chestY = HEIGHT-10;
@@ -94,7 +95,15 @@ void Model::setView() {
         }
     }
     const std::pair<int, int> &chestCords = TrueChest::getCords();
-    TrueChest::setVisible(isVisibleCell(chestCords.first, chestCords.second));
+    static bool seeChest = false;
+    if(!seeChest && isVisibleCell(chestCords.first, chestCords.second)) {
+        TrueChest::setVisible(true);
+        seeChest = true;
+        Messenger::putString("You've found a chest!");
+    } else if(!isVisibleCell(chestCords.first, chestCords.second)) {
+        seeChest = false;
+        TrueChest::setVisible(false);
+    }
 }
 
 void Model::setAnimDir(const float& dx, const float& dy) {

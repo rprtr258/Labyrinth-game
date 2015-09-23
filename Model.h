@@ -2,6 +2,7 @@
 #define MODEL_H
 
 #include <cmath>
+#include <string>
 
 #include "Labyrinth.h"
 #include "Player.h"
