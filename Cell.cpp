@@ -3,8 +3,6 @@
 Cell::Cell() {
 }
 
-Cell::~Cell() {
-}
 
 sf::Sprite &Cell::getSprite() {
     return sprite;

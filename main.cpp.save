@@ -10,32 +10,38 @@ bool testChance(int chance) {
     return (rand()%100)<chance;
 }
 
+void clearMemory() {
+    Labyrinth::clear();
+    Inventory::clear();
+}
+
 int main() {
     srand(time(NULL));
     TexturesStorage::loadMainTexture("img\\sprites_pack_3.png");
-    TexturesStorage::loadPlayerTexture("img\\player.png");
-    TexturesStorage::loadChestTexture("img\\chest.png");
-    TexturesStorage::loadGuiTexture("img\\gui.png");
-    TexturesStorage::loadHeartsTexture("img\\heart_full.png", "img\\heart_half_full.png", "img\\heart_empty.png");
-    TexturesStorage::loadEmptyCellTexture("img\\empty_cell.png");
+    TexturesStorage::loadTexture("Player", "img\\player.png");
+    TexturesStorage::loadTexture("Chest", "img\\chest.png");
+    TexturesStorage::loadTexture("GUI", "img\\gui.png");
+    TexturesStorage::loadTexture("Heart_Full", "img\\heart_full.png");
+    TexturesStorage::loadTexture("Half_Full_Heart", "img\\heart_half_full.png", "img\\heart_empty.png");
+    TexturesStorage::loadTexture("Empty_Cell", "img\\empty_cell.png");
 
+    Drawer::init();
+    Model::init();
 
-
-    controller.setModel(&model);
-    model.setView();
-    while (drawer.getWindow().isOpen()) {
+    while (Drawer::getWindow().isOpen()) {
         sf::Event event;
-        while(drawer.getWindow().pollEvent(event)) {
+        while(Drawer::getWindow().pollEvent(event)) {
             if(event.type == sf::Event::Closed)
-                drawer.getWindow().close();
+                Drawer::getWindow().close();
             if(event.type == sf::Event::KeyPressed) {
-                controller.processKey(event.key.code);
+                Controller::processKey(event.key.code);
             }
         }
-        drawer.getWindow().clear();
-        drawer.draw();
-        model.animationStep();
-        drawer.getWindow().display();
+        Drawer::getWindow().clear();
+        Drawer::draw();
+        Model::animationStep();
+        Drawer::getWindow().display();
     }
+    clearMemory();
     return 0;
 }

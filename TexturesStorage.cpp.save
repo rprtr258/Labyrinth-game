@@ -1,7 +1,7 @@
 #include "TexturesStorage.h"
 
 std::vector<std::pair<std::string, sf::Texture> > TexturesStorage::array;
-sf::Image TexturesStorage::mainTexture;
+sf::Image TexturesStorage
 
 void TexturesStorage::loadTexture(const std::string &name, const std::string &path) {
     sf::Texture texture;

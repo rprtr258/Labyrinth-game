@@ -26,6 +26,7 @@ void Model::init() {
     moves[1].set(sf::Keyboard::Right, Cell::RIGHT, speed,  0.0f);
     moves[2].set(sf::Keyboard::Down,  Cell::DOWN,  0.0f,  speed);
     moves[3].set(sf::Keyboard::Left,  Cell::LEFT, -speed,  0.0f);
+    setView();
 }
 
 void Model::moveHero(const sf::Keyboard::Key& key) {

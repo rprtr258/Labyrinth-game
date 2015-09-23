@@ -18,11 +18,14 @@ void clearMemory() {
 int main() {
     srand(time(NULL));
     TexturesStorage::loadMainTexture("img\\sprites_pack_3.png");
-    TexturesStorage::loadPlayerTexture("img\\player.png");
-    TexturesStorage::loadChestTexture("img\\chest.png");
-    TexturesStorage::loadGuiTexture("img\\gui.png");
-    TexturesStorage::loadHeartsTexture("img\\heart_full.png", "img\\heart_half_full.png", "img\\heart_empty.png");
-    TexturesStorage::loadEmptyCellTexture("img\\empty_cell.png");
+    TexturesStorage::loadTexture("Player", "img\\player.png");
+    TexturesStorage::loadTexture("Chest", "img\\chest.png");
+    TexturesStorage::loadTexture("GUI", "img\\gui.png");
+    TexturesStorage::loadTexture("Full_Heart", "img\\heart_full.png");
+    TexturesStorage::loadTexture("Half_Full_Heart", "img\\heart_half_full.png");
+    TexturesStorage::loadTexture("Empty_Heart", "img\\heart_empty.png");
+    TexturesStorage::loadTexture("Empty_Cell", "img\\empty_cell.png");
+    TexturesStorage::loadTexture("Inventory", "img\\inventory.png");
 
     Drawer::init();
     Model::init();

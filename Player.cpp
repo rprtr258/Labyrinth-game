@@ -7,7 +7,7 @@ PlayerStats Player::stats;
 Player::MoveDir Player::dir;
 
 void Player::init() {
-    texture = TexturesStorage::getPlayerTexture();
+    texture = TexturesStorage::getTexture("Player");
     sprite.setTexture(texture);
     sprite.setPosition(0, 0);
     x = 0;

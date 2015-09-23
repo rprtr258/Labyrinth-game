@@ -486,16 +486,17 @@
 1442907154 source:g:\workspacec\labyrinth\item.cpp
 	"Item.h"
 
-1442586374 source:g:\workspacec\labyrinth\labyrinth-game\cell.cpp
+1442993750 source:g:\workspacec\labyrinth\labyrinth-game\cell.cpp
 	"Cell.h"
 
-1442934569 g:\workspacec\labyrinth\labyrinth-game\cell.h
+1442993749 g:\workspacec\labyrinth\labyrinth-game\cell.h
 	<SFML/Graphics.hpp>
 	"TexturesStorage.h"
 	"Constants.h"
 
-1442905814 g:\workspacec\labyrinth\labyrinth-game\texturesstorage.h
+1442994590 g:\workspacec\labyrinth\labyrinth-game\texturesstorage.h
 	<string>
+	<vector>
 	<SFML/Graphics.hpp>
 
 1442529982 g:\workspacec\labyrinth\labyrinth-game\drawableinterface.h
@@ -562,7 +563,7 @@
 	<SFML/Graphics.hpp>
 	"TexturesStorage.h"
 
-1442935022 g:\workspacec\labyrinth\labyrinth-game\inventory.h
+1442995099 g:\workspacec\labyrinth\labyrinth-game\inventory.h
 	"Item.h"
 
 1442935091 g:\workspacec\labyrinth\labyrinth-game\item.h
@@ -572,45 +573,45 @@
 1442529975 source:g:\workspacec\labyrinth\labyrinth-game\drawableinterface.cpp
 	"DrawableInterface.h"
 
-1442934051 source:g:\workspacec\labyrinth\labyrinth-game\drawer.cpp
+1442992471 source:g:\workspacec\labyrinth\labyrinth-game\drawer.cpp
 	"Drawer.h"
 
 1442397672 source:g:\workspacec\labyrinth\labyrinth-game\dsu.cpp
 	"DSU.h"
 
-1442935554 source:g:\workspacec\labyrinth\labyrinth-game\gui.cpp
+1442994277 source:g:\workspacec\labyrinth\labyrinth-game\gui.cpp
 	"GUI.h"
 
-1442935067 source:g:\workspacec\labyrinth\labyrinth-game\inventory.cpp
+1442995394 source:g:\workspacec\labyrinth\labyrinth-game\inventory.cpp
 	"Inventory.h"
 
-1442935352 source:g:\workspacec\labyrinth\labyrinth-game\item.cpp
+1442995549 source:g:\workspacec\labyrinth\labyrinth-game\item.cpp
 
-1442934781 source:g:\workspacec\labyrinth\labyrinth-game\labyrinth.cpp
+1442993679 source:g:\workspacec\labyrinth\labyrinth-game\labyrinth.cpp
 	"Labyrinth.h"
 
-1442935554 source:g:\workspacec\labyrinth\labyrinth-game\main.cpp
+1442994952 source:g:\workspacec\labyrinth\labyrinth-game\main.cpp
 	<SFML/Graphics.hpp>
 	"Drawer.h"
 	"Controller.h"
 	"Model.h"
 	"TexturesStorage.h"
 
-1442934262 source:g:\workspacec\labyrinth\labyrinth-game\player.cpp
+1442994409 source:g:\workspacec\labyrinth\labyrinth-game\player.cpp
 	"Player.h"
 
 1442841904 source:g:\workspacec\labyrinth\labyrinth-game\playerstats.cpp
 	"PlayerStats.h"
 
-1442905813 source:g:\workspacec\labyrinth\labyrinth-game\texturesstorage.cpp
+1442994670 source:g:\workspacec\labyrinth\labyrinth-game\texturesstorage.cpp
 	"TexturesStorage.h"
 
-1442934296 source:g:\workspacec\labyrinth\labyrinth-game\truechest.cpp
+1442994533 source:g:\workspacec\labyrinth\labyrinth-game\truechest.cpp
 	"TrueChest.h"
 
 1442397192 source:g:\workspacec\labyrinth\labyrinth-game\turn.cpp
 	"Turn.h"
 
-1442935204 source:g:\workspacec\labyrinth\labyrinth-game\model.cpp
+1442935925 source:g:\workspacec\labyrinth\labyrinth-game\model.cpp
 	"Model.h"
 

@@ -59,8 +59,6 @@
 		<Unit filename="Controller.h" />
 		<Unit filename="DSU.cpp" />
 		<Unit filename="DSU.h" />
-		<Unit filename="DrawableInterface.cpp" />
-		<Unit filename="DrawableInterface.h" />
 		<Unit filename="Drawer.cpp" />
 		<Unit filename="Drawer.h" />
 		<Unit filename="GUI.cpp" />

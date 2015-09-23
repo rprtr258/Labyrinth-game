@@ -156,8 +156,8 @@ void Labyrinth::generate() {
     for(int i=0;i<WIDTH;i++) {
         for(int j=0;j<HEIGHT;j++) {
             for(int k=0;k<4;k++) {
-                if((i+corners[k][2]>=0 && i+corners[k][2]<WIDTH && j+corners[k][3]>=0 && j+corners[k][3]<HEIGHT && array[i+corners[k][2]][j+corners[k][3]]->getWall(corners[k][0])) ||
-                   (i+corners[k][4]>=0 && i+corners[k][4]<WIDTH && j+corners[k][5]>=0 && j+corners[k][5]<HEIGHT && array[i+corners[k][4]][j+corners[k][5]]->getWall(corners[k][1]))) {
+                if((i+corners[2]>=0 && i+corners[2]<WIDTH && j+corners[3]>=0 && j+corners[3]<HEIGHT && array[i+corners[2]][j+corners[3]]->getWall(corners[k][0])) ||
+                   (i+corners[4]>=0 && i+corners[4]<WIDTH && j+corners[5]>=0 && j+corners[5]<HEIGHT && array[i+corners[4]][j+corners[5]]->getWall(corners[k][1]))) {
                     array[i][j]->addCorner(corners[k][6]);
                 }
             }

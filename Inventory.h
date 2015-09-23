@@ -15,6 +15,8 @@ class Inventory {
     private:
         static Item* inv[4][3];
         static bool showed;
+        static sf::Texture texture;
+        static sf::Sprite sprite;
 };
 
 #endif

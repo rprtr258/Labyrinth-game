@@ -7,7 +7,7 @@ std::pair<int, int> TrueChest::cords;
 
 void TrueChest::init() {
     visible = false;
-    texture = TexturesStorage::getChestTexture();
+    texture = TexturesStorage::getTexture("Chest");
     sprite.setTexture(texture);
 }
 

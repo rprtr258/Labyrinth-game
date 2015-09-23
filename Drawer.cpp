@@ -4,7 +4,7 @@ sf::RenderWindow Drawer::window;
 sf::View Drawer::view, Drawer::guiView;;
 
 void Drawer::init() {
-    Drawer::window.create(sf::VideoMode(640, 640+GUI_HEIGHT), "Labyrinth");
+    Drawer::window.create(sf::VideoMode(640, 640+GUI_HEIGHT), "Labyrinth", sf::Style::Titlebar|sf::Style::Close);
 
     view.reset(sf::FloatRect(0, 0, 640, 640));
     view.setCenter(64, 64);
@@ -23,12 +23,12 @@ sf::RenderWindow& Drawer::getWindow() {
 }
 
 void Drawer::draw() {
-    window.setView(guiView);
-    GUI::draw(window);
-    Inventory::draw(window);
-///////////////////////////////////////
     window.setView(view);
-    Labyrinth::draw(window);
-    Player::draw(window);
-    TrueChest::draw(window);
+        Labyrinth::draw(window);
+        TrueChest::draw(window);
+        Player::draw(window);
+///////////////////////////////////////
+    window.setView(guiView);
+        GUI::draw(window);
+        Inventory::draw(window);
 }
