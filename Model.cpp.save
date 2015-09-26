@@ -35,8 +35,6 @@ void Model::moveHero(const sf::Keyboard::Key& key) {
         if(key==moves[i].getKey() &&
            !Labyrinth::array[Player::getPos().first][Player::getPos().second]->getWall(moves[i].getWall()) &&
            !playerMoves) {
-            std::string 
-            Messenger::putString("moved");
             Player::move(int(moves[i].getDirX()*1/speed), int(moves[i].getDirY()*1/speed));
             setAnimDir(moves[i].getDirX(), moves[i].getDirY());
             setPlayerMoves(true);
@@ -97,7 +95,15 @@ void Model::setView() {
         }
     }
     const std::pair<int, int> &chestCords = TrueChest::getCords();
-    TrueChest::setVisible(isVisibleCell(chestCords.first, chestCords.second));
+    static bool seeChest = false, seeExit = false;
+    if(!seeChest && isVisibleCell(chestCords.first, chestCords.second)) {
+        TrueChest::setVisible(true);
+        seeChest = true;
+        Messenger::putString("You've found a chest!");
+    } else if(!isVisibleCell(chestCords.first, chestCords.second)) {
+        seeChest = false;
+        TrueChest::setVisible(false);
+    }
 }
 
 void Model::setAnimDir(const float& dx, const float& dy) {

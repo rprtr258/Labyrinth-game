@@ -2,7 +2,6 @@
 #include <iostream>
 
 Item* Inventory::inv[4][3];
-Item* Inventory::dr;
 bool Inventory::showed, Inventory::drag;
 sf::Texture Inventory::texture;
 sf::Sprite Inventory::sprite;
@@ -54,7 +53,6 @@ void Inventory::draw(sf::RenderWindow &window) {
                 inv[i][j]->draw(window);
             }
         }
-        if(drag) dr->draw(window);
     }
 }
 
@@ -70,14 +68,11 @@ void Inventory::click() {
             inv[dTargetX][dTargetY]->setPos(cellx, celly);
             std::swap(inv[cellx][celly], inv[dTargetX][dTargetY]);
             dTargetX = dTargetY = -1;
-            inv[cellx][celly]->unfollowMouse();
-            dr = NULL;
             drag = false;
         } else {
             dTargetX = cellx;
             dTargetY = celly;
             inv[cellx][celly]->followMouse();
-            dr = inv[cellx][celly];
             drag = true;
         }
     }

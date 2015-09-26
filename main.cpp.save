@@ -53,11 +53,8 @@ int main() {
             if(event.type == sf::Event::KeyPressed) {
                 Controller::processKey(event.key.code);
             }
-            if(event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
+            if(event.type == sf::Event::MouseButtonPressed && ) {
                 Controller::click();
-            }
-            if(event.type == sf::Event::MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left) {
-                Controller::unclickLeft();
             }
         }
         Drawer::getWindow().clear();

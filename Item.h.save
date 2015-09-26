@@ -15,7 +15,7 @@ class Item {
         void setPos(const int&, const int&);
         void draw(sf::RenderWindow&);
 
-        void followMouse();
+        void followMouse(sf::Render);
         void unfollowMouse();
     protected:
         sf::Sprite sprite;
@@ -23,6 +23,7 @@ class Item {
         int posX, posY;
         Type type;
         bool follMouse;
+        sf::RenderWindow &win;
 };
 
 #endif

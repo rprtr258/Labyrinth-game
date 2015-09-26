@@ -23,7 +23,3 @@ void Controller::click() {
         lmbPressed = true;
     }
 }
-
-void Controller::unclickLeft() {
-    lmbPressed = false;
-}

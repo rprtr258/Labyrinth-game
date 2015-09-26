@@ -38,16 +38,13 @@ void Item::setPos(const int &posX, const int &posY) {
 }
 
 void Item::draw(sf::RenderWindow &window) {
-    if(follMouse) {
-        sprite.setPosition(sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y);
-    }
     window.draw(sprite);
 }
 
-void Item::followMouse() {
-    follMouse = true;
+void followMouse() {
+    follMouse = false;
 }
 
-void Item::unfollowMouse() {
+void unfollowMouse() {
     follMouse = false;
 }

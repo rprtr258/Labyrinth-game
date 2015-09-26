@@ -156,36 +156,15 @@ void Labyrinth::generate() {
     for(int i=0;i<WIDTH;i++) {
         for(int j=0;j<HEIGHT;j++) {
             for(int k=0;k<4;k++) {
-                if((i+corners[2]>=0 && i+corners[2]<WIDTH && j+corners[3]>=0 && j+corners[3]<HEIGHT && array[i+corners[2]][j+corners[3]]->getWall(corners[k][0])) ||
-                   (i+corners[4]>=0 && i+corners[4]<WIDTH && j+corners[5]>=0 && j+corners[5]<HEIGHT && array[i+corners[4]][j+corners[5]]->getWall(corners[k][1]))) {
+                if((i+corners[k][2]>=0 && i+corners[k][2]<WIDTH && j+corners[k][3]>=0 && j+corners[k][3]<HEIGHT && array[i+corners[k][2]][j+corners[k][3]]->getWall(corners[k][0])) ||
+                   (i+corners[k][4]>=0 && i+corners[k][4]<WIDTH && j+corners[k][5]>=0 && j+corners[k][5]<HEIGHT && array[i+corners[k][4]][j+corners[k][5]]->getWall(corners[k][1]))) {
                     array[i][j]->addCorner(corners[k][6]);
                 }
             }
         }
     }
-    /*int row = rand()%4;
-    if(row==0) {
-        int pos = rand()%(WIDTH-1)+1;
-        array[pos][0]->removeWall(Cell::UP);
-        array[pos][0]->addCorner(Cell::RU_CORNER);
-        array[pos][0]->addCorner(Cell::LU_CORNER);
-    }
-    if(row==1) {
-        int pos = rand()%(WIDTH-1)+1;
-        array[pos][HEIGHT-1]->removeWall(Cell::DOWN);
-        array[pos][HEIGHT-1]->addCorner(Cell::RD_CORNER);
-        array[pos][HEIGHT-1]->addCorner(Cell::LD_CORNER);
-    }
-    if(row==2) {
-        int pos = rand()%(HEIGHT-1)+1;
-        array[0][pos]->removeWall(Cell::LEFT);
-        array[0][pos]->addCorner(Cell::LU_CORNER);
-        array[0][pos]->addCorner(Cell::LD_CORNER);
-    }
-    if(row==3) {
-        int pos = rand()%HEIGHT;
-        array[WIDTH-1][pos]->removeWall(Cell::RIGHT);
-        array[WIDTH-1][pos]->addCorner(Cell::RU_CORNER);
-        array[WIDTH-1][pos]->addCorner(Cell::RD_CORNER);
-    }*/
+    array[WIDTH-1][HEIGHT-1]->removeWall(Cell::UP);
+    array[WIDTH-1][HEIGHT-1]->removeWall(Cell::LEFT);
+    array[WIDTH-1][HEIGHT-1]->addCorner(Cell::RU_CORNER);
+    array[WIDTH-1][HEIGHT-1]->addCorner(Cell::LU_CORNER);
 }

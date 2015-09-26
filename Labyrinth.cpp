@@ -163,29 +163,19 @@ void Labyrinth::generate() {
             }
         }
     }
-    /*int row = rand()%4;
-    if(row==0) {
-        int pos = rand()%(WIDTH-1)+1;
-        array[pos][0]->removeWall(Cell::UP);
-        array[pos][0]->addCorner(Cell::RU_CORNER);
-        array[pos][0]->addCorner(Cell::LU_CORNER);
-    }
-    if(row==1) {
-        int pos = rand()%(WIDTH-1)+1;
-        array[pos][HEIGHT-1]->removeWall(Cell::DOWN);
-        array[pos][HEIGHT-1]->addCorner(Cell::RD_CORNER);
-        array[pos][HEIGHT-1]->addCorner(Cell::LD_CORNER);
-    }
-    if(row==2) {
-        int pos = rand()%(HEIGHT-1)+1;
-        array[0][pos]->removeWall(Cell::LEFT);
-        array[0][pos]->addCorner(Cell::LU_CORNER);
-        array[0][pos]->addCorner(Cell::LD_CORNER);
-    }
-    if(row==3) {
-        int pos = rand()%HEIGHT;
-        array[WIDTH-1][pos]->removeWall(Cell::RIGHT);
-        array[WIDTH-1][pos]->addCorner(Cell::RU_CORNER);
-        array[WIDTH-1][pos]->addCorner(Cell::RD_CORNER);
-    }*/
+    array[WIDTH-1][HEIGHT-1]->removeWall(Cell::UP);
+    array[WIDTH-1][HEIGHT-1]->removeWall(Cell::LEFT);
+    array[WIDTH-1][HEIGHT-1]->removeCorner(Cell::RU_CORNER);
+    array[WIDTH-1][HEIGHT-1]->removeCorner(Cell::LU_CORNER);
+    array[WIDTH-1][HEIGHT-1]->removeCorner(Cell::LD_CORNER);
+
+    array[WIDTH-2][HEIGHT-1]->addCorner(Cell::RD_CORNER);
+    array[WIDTH-2][HEIGHT-1]->addCorner(Cell::RU_CORNER);
+    array[WIDTH-2][HEIGHT-1]->removeWall(Cell::RIGHT);
+
+    array[WIDTH-1][HEIGHT-2]->addCorner(Cell::RD_CORNER);
+    array[WIDTH-1][HEIGHT-2]->addCorner(Cell::LD_CORNER);
+    array[WIDTH-1][HEIGHT-2]->removeWall(Cell::DOWN);
+
+    array[WIDTH-1][HEIGHT-1]->getSprite().setTexture(TexturesStorage::getTexture("Exit_Cell"));
 }

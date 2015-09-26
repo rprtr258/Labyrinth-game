@@ -95,7 +95,7 @@ void Model::setView() {
         }
     }
     const std::pair<int, int> &chestCords = TrueChest::getCords();
-    static bool seeChest = false;
+    static bool seeChest = false, seeExit = false;
     if(!seeChest && isVisibleCell(chestCords.first, chestCords.second)) {
         TrueChest::setVisible(true);
         seeChest = true;
@@ -103,6 +103,12 @@ void Model::setView() {
     } else if(!isVisibleCell(chestCords.first, chestCords.second)) {
         seeChest = false;
         TrueChest::setVisible(false);
+    }
+    if(!seeExit && isVisibleCell(WIDTH-1, HEIGHT-1)) {
+        seeExit = true;
+        Messenger::putString("You've found an exit!");
+    } else if(!isVisibleCell(WIDTH-1, HEIGHT-1)) {
+        seeExit = false;
     }
 }
 

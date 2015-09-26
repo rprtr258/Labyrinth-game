@@ -17,7 +17,6 @@ class Inventory {
         static void clear();
     private:
         static Item* inv[4][3];
-        static Item* dr;
         static bool showed, drag;
         static int dTargetX, dTargetY;
         static sf::Texture texture;

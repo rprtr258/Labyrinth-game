@@ -10,7 +10,6 @@ class Controller {
         static void init();
         static void processKey(const sf::Keyboard::Key&);
         static void click();
-        static void unclickLeft();
     private:
         static bool lmbPressed;
 };
